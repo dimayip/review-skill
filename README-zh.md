@@ -1,6 +1,6 @@
 # Review Skill（复盘 Skill）
 
-CodeBuddy IDE 的自适应智能复盘技能。它使用多个经过验证的框架（KPT、GRAI、4F、KISS、STAR、AAR），根据用户的意图自动选择最合适的框架，引导用户完成结构化的复盘。
+自适应智能复盘技能，适用于各种 AI 助手和 LLM 智能体。它使用多个经过验证的框架（KPT、GRAI、4F、KISS、STAR、AAR），根据用户的意图自动选择最合适的框架，引导用户完成结构化的复盘。此技能可适配多种 AI 编程助手和智能体框架。
 
 ## ✨ 功能特性
 
@@ -88,14 +88,20 @@ review-skill/
 
 ## 🛠️ 安装方法
 
+本技能可适配多种 AI 助手和智能体框架。安装方法取决于你的平台：
+
+### 用于 CodeBuddy IDE
 1. 将 `review-skill` 目录复制到你的 CodeBuddy skills 目录：
    ```bash
    cp -r review-skill ~/.codebuddy/skills/
    ```
-
 2. 重启 CodeBuddy IDE 或重新加载 skills。
-
 3. 当检测到触发词时，skill 将自动加载。
+
+### 用于其他 AI 助手
+1. 将 `SKILL.md` 文件内容复制到你的助手的系统提示词或自定义指令中。
+2. 根据你的助手环境调整文件路径和命令示例。
+3. 核心逻辑（自适应框架选择、选择题驱动交互）可在任何基于 LLM 的助手中复用。
 
 ## 📋 输出
 

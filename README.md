@@ -1,6 +1,6 @@
 # Review Skill (复盘 Skill)
 
-An adaptive, intelligent review (retrospective) skill for CodeBuddy IDE. It guides users through structured reflection sessions using multiple proven frameworks (KPT, GRAI, 4F, KISS, STAR, AAR), automatically selecting the best framework based on the user's intent.
+An adaptive, intelligent review (retrospective) skill for AI assistants and LLM-based agents. It guides users through structured reflection sessions using multiple proven frameworks (KPT, GRAI, 4F, KISS, STAR, AAR), automatically selecting the best framework based on the user's intent. This skill can be adapted for use in various AI coding assistants and agent frameworks.
 
 ## ✨ Features
 
@@ -88,14 +88,20 @@ review-skill/
 
 ## 🛠️ Installation
 
+This skill can be adapted for various AI assistants and agent frameworks. Installation depends on your platform:
+
+### For CodeBuddy IDE
 1. Copy the `review-skill` directory to your CodeBuddy skills directory:
    ```bash
    cp -r review-skill ~/.codebuddy/skills/
    ```
-
 2. Restart CodeBuddy IDE or reload skills.
-
 3. The skill will be automatically loaded when trigger words are detected.
+
+### For Other AI Assistants
+1. Copy the `SKILL.md` file content to your assistant's system prompt or custom instructions.
+2. Adapt the file paths and command examples to match your assistant's environment.
+3. The core logic (adaptive framework selection, choice-driven interaction) can be reused in any LLM-based assistant.
 
 ## 📋 Output
 
