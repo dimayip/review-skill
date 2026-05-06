@@ -91,12 +91,12 @@ review-skill/
 This skill can be adapted for various AI assistants and agent frameworks. Installation depends on your platform:
 
 ### For CodeBuddy IDE
-1. Copy the `review-skill` directory to your CodeBuddy skills directory:
-   ```bash
-   cp -r review-skill ~/.codebuddy/skills/
-   ```
-2. Restart CodeBuddy IDE or reload skills.
-3. The skill will be automatically loaded when trigger words are detected.
+
+Run the following command to install the skill:
+
+```bash
+npx skills add https://github.com/dimayip/review-skill.git
+```
 
 ### For Other AI Assistants
 1. Copy the `SKILL.md` file content to your assistant's system prompt or custom instructions.

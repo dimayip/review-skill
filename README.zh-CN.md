@@ -91,12 +91,12 @@ review-skill/
 本技能可适配多种 AI 助手和智能体框架。安装方法取决于你的平台：
 
 ### 用于 CodeBuddy IDE
-1. 将 `review-skill` 目录复制到你的 CodeBuddy skills 目录：
-   ```bash
-   cp -r review-skill ~/.codebuddy/skills/
-   ```
-2. 重启 CodeBuddy IDE 或重新加载 skills。
-3. 当检测到触发词时，skill 将自动加载。
+
+运行以下命令安装该 Skill：
+
+```bash
+npx skills add https://github.com/dimayip/review-skill.git
+```
 
 ### 用于其他 AI 助手
 1. 将 `SKILL.md` 文件内容复制到你的助手的系统提示词或自定义指令中。
